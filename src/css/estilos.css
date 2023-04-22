@@ -1,0 +1,206 @@
+/* Importando o arquivo de reset css */
+@import 'reset.css'; /* reset */
+@import 'fontes.css'; /* fontes personalizadas do google fonts */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================== Vídeo de fundo =========================== */
+.fundo-video {
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fundo-video .video {
+    height: 100vh;
+}
+
+.fundo-video::after { /* Pseudo Elemento */
+    content: "";
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,.1) 0%, rgba(0,0,0,.8) 50%, rgba(0,0,0,1) 100%);
+}
+/* =========================== Vídeo de fundo =========================== */
+
+.cabecalho {
+    max-width: 1440px;
+    margin-inline: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    padding: 30px;
+}
+
+.cabecalho .logo {
+    width: 65px;
+}
+
+/* Estilo do menu */
+.cabecalho .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a {
+    font-weight: bold;
+    color: hwb(0 100% 0%);
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    -webkit-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+         -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+}
+
+.cabecalho nav li a:hover {
+    background-color: hwb(352 0% 16%);
+}
+
+/* Estilizando a tag com a class container */
+.container {
+    max-width: 1440px;
+    height: calc(100vh - 132px);
+    padding: 0 30px 30px;
+    margin-inline: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.container .imagem-titulo {
+    max-width: 500px;
+}
+
+.container .descricao {
+    font-family: 'Ubuntu', sans-serif;
+    color: hwb(220 66% 28%);
+    width: 85%;
+    font-size: 23px;
+    margin: 30px 0;
+}
+
+.container .botao-trailer {
+    background-color: hwb(352 0% 0%);
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+         -o-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+}
+
+.container .botao-trailer:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.container .botao-trailer:focus {
+    outline: none;
+}
+
+/* =========================== Modal =========================== */
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, .7);
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.conteudo-modal {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100vh;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.fechar-modal {
+    background-color: #fff;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+.modal iframe#video {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}
+/* =========================== Modal =========================== */
