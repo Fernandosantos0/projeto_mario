@@ -5,8 +5,8 @@ Projeto Super Mario, desenvolvindo por mim na Live Secreta
 
 ## Imagens do Projeto
 
-<img src="src/imagens/tela1.png">
+<img src="src/imagens/tela1.PNG">
 
-<img src="src/imagens/tela2.png">
+<img src="src/imagens/tela2.PNG">
 
-<img src="src/imagens/tela3.png">
+<img src="src/imagens/tela3.PNG">
