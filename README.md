@@ -1,9 +1,12 @@
 # Projeto Mario
-Projeto Super Mario, desenvolvindo por mim na Live Secreta  
- # Projeto Mario
-<p>O Projeto Mário Bros foi desenvovindo na Live Secreta do canal do YouTube Dev em Dobro. Esse projeto foi feito usando as tecnologia HTML, CSS e JavaScript</p>
+<p>O Projeto Mário Bros foi desenvovindo na Live Secreta do canal do YouTube, Dev em Dobro. 
+ 
+ ## Tecnologias Empregadas
+ - HTML
+- CSS
+-  JavaScript</p>
 
-## Imagens do Projeto
+<h2 align="center">Imagens do projeto</h2>
 
 <img src="src/imagens/tela1.PNG">
 
@@ -11,6 +14,7 @@ Projeto Super Mario, desenvolvindo por mim na Live Secreta
 
 <img src="src/imagens/tela3.PNG">
 
-<br><br>
-
-<a href="https://fernandosantos0.github.io/projeto_mario/">Acesse aqui!</a>
+### Acessar o projeto:
+```bash
+https://fernandosantos0.github.io/projeto_mario/
+```
